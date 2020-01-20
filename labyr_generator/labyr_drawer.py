@@ -1,5 +1,5 @@
 from PIL import Image
-from labyrinth import Labyrinth
+from labyr_generator.labyrinth import Labyrinth
 
 
 # size = 1280, 1280
@@ -12,6 +12,8 @@ from labyrinth import Labyrinth
 COEFF_OF_SCALING = 10
 WALL_COLOR = (0, 0, 0) # black
 EMPTY_FIELD_COLOR = (255, 255, 255) # white
+START_AND_STOP_FIELD_COLOR = (255, 0, 0) # red
+SOLUTION_FIELD_COLOR = (0, 255, 0) # green
 
 
 class LabyrinthDrawer:
@@ -32,11 +34,15 @@ class LabyrinthDrawer:
                 x += 1
             y1 += 1
 
-    def draw_labyr(self, labyrinth: Labyrinth ,filepath: str) -> None:
+    def draw_labyr(self, labyrinth: Labyrinth ,filepath: str, soluted: bool) -> None:
         for labyr_line in range(labyrinth.heigth):
             for labyr_column in range(labyrinth.width):
                 if labyrinth.elem_is_wall(y=labyr_line, x=labyr_column):
                     color = WALL_COLOR
+                elif labyrinth.elem_is_start_stop(y=labyr_line, x=labyr_column):
+                    color = START_AND_STOP_FIELD_COLOR
+                elif labyrinth.elem_is_way(y=labyr_line, x=labyr_column) and soluted:
+                    color = SOLUTION_FIELD_COLOR
                 else:
                     color = EMPTY_FIELD_COLOR
 
