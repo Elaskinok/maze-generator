@@ -8,7 +8,7 @@ Console utility, which allows to generate labyrinth and solve it.
 
 You can generate labyrinth with HEIGTH and WIDTH parametres.
 
-Application create folder "labyr_gen_results" with 2 .jpg files: pure labyrinth and soluted labyrinth.
+Application creates folder "labyr_gen_results" with 2 .jpg files: pure labyrinth and soluted labyrinth.
 
 ### Example 21x21
 
