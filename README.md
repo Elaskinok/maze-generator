@@ -1,24 +1,24 @@
-# Labyrinth-generator
+# Maze-generator
 
 ## About application
 
-Console utility, which allows to generate labyrinth and solve it.
+Console utility which provides functionality to generate a maze, solve it, and write the raw maze and the solved one into an image.
 
 ## Application features
 
-You can generate labyrinth with HEIGTH and WIDTH parametres.
+You can generate maze with HEIGTH and WIDTH parametres.
 
 #### WARNING!
-##### Do not create the big labyrinth! You are bordered your RAM.
+##### Do not create the a big maze! You are constrainted with your RAM.
 
-Application creates folder "labyr_gen_results" with 2 .jpg files: pure labyrinth and soluted labyrinth.
+Application creates folder "labyr_gen_results" with 2 .jpg files: pure and solved mazes.
 
 ### Example 21x21
 
-- pure labyrinth
+- pure maze
 
 ![pure labyrinth](example_21x21/labyrinth.jpg)
-- soluted labyrinth
+- solved maze
 
 ![pure labyrinth](example_21x21/soluted_labyrinth.jpg)
 
@@ -26,12 +26,12 @@ Application creates folder "labyr_gen_results" with 2 .jpg files: pure labyrinth
 
 ### Installation
 
-    $ git clone https://github.com/Elaskinok/Labyrinth-generator.git
-    $ cd Labyrinth-generator
+    $ git clone https://github.com/Elaskinok/maze-generator.git
+    $ cd maze-generator
     $ pip3 install .
     
 ### Using
 
     $ labyr-gen [heigth] [width]
-    
+
 heigth, width - must be odd integer !
