@@ -1,10 +1,10 @@
 """"""
 
 
-class LabyrinthElem:
+class MazeElem:
     """"""
 
-    def __init__(self, meta_symbol: str=' '):
+    def __init__(self, meta_symbol: str = ' '):
         self._meta_symbol = meta_symbol
         self._visited = False
 

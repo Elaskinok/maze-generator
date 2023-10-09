@@ -6,21 +6,21 @@ Console utility which provides functionality to generate a maze, solve it, and w
 
 ## Application features
 
-You can generate maze with HEIGTH and WIDTH parametres.
+You can generate maze with HEIGHT and WIDTH parameters.
 
 #### WARNING!
-##### Do not create the a big maze! You are constrainted with your RAM.
+##### Do not create a big maze! You are limited with your RAM.
 
-Application creates folder "labyr_gen_results" with 2 .jpg files: pure and solved mazes.
+Application creates folder "maze_gen_results" with 2 .jpg files: pure and solved mazes.
 
 ### Example 21x21
 
 - pure maze
 
-![pure labyrinth](example_21x21/labyrinth.jpg)
+![pure maze](example_21x21/maze.jpg)
 - solved maze
 
-![pure labyrinth](example_21x21/soluted_labyrinth.jpg)
+![solved maze](example_21x21/solved_maze.jpg)
 
 ## Installation and Using application
 
@@ -32,6 +32,6 @@ Application creates folder "labyr_gen_results" with 2 .jpg files: pure and solve
     
 ### Using
 
-    $ labyr-gen [heigth] [width]
+    $ python main.py [height] [width]
 
-heigth, width - must be odd integer !
+height, width - must be odd integer !
